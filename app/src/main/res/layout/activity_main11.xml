@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity11"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/raw_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDD835"
+        android:text="RAW데이터 읽기"></Button>
+
+    <EditText
+        android:id="@+id/raw_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:textColor="#1E88E5"
+        android:textSize="30sp"></EditText>
+
+    <Button
+        android:id="@+id/sd_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:text="sd카드에 읽기"></Button>
+
+    <Button
+        android:id="@+id/sd_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FB8C00"
+        android:text="sd카드에 쓰기"></Button>
+
+    <Button
+        android:id="@+id/sd_dir_mk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ACC1"
+        android:text="sd 디렉토리 생성"></Button>
+
+    <Button
+        android:id="@+id/sd_dir_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7CB342"
+        android:text="sd 디렉토리 삭제"></Button>
+
+    <Button
+        android:id="@+id/sd_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="sd 목록가지고오기"></Button>
+
+    <EditText
+        android:id="@+id/raw_data2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:textColor="#1E88E5"></EditText>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.HighWidget.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.HighWidget.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.HighWidget.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

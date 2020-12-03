@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:background="@drawable/dog"
+    android:orientation="vertical">
+<!--layout에 바탕을 설정할 수 있음.-->
+    <Button
+        android:id="@+id/handle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:text="그만 종료하자! 많이 했다!!!!"
+        ></Button>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <SlidingDrawer
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:content="@+id/content2"
+            android:handle="@+id/handle2">
+
+            <Button
+                android:id="@+id/handle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_launcher"
+                android:text="DOWN!!!"
+                ></Button>
+            <LinearLayout
+                android:id="@+id/content2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_launcher_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="버튼도 들어가는 구나.!!!" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@color/purple_200"
+                    android:text="버튼도 여러개 들어가는 구나.!!!"
+                    app:backgroundTint="#FB8C00" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text2"></TextView>
+
+            </LinearLayout>
+        </SlidingDrawer>
+        <!--slidingDrawer은 버튼을 클릭하면 화면이 다시 열리는 의미/다시 클릭하면 닫힘.!     -->
+        <SlidingDrawer
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle">
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:drawableLeft="@drawable/ic_launcher"
+                android:text="UPUP!!"
+                ></Button>
+            <!-- drawbleLeft는 이미지와 글자를 함께 배치하는 경우, 이미지를 왼쪽에 배치하겠다는 의미-->
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/design_default_color_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="날아보자꾸.!!!" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text3"></TextView>
+
+            </LinearLayout>
+        </SlidingDrawer>
+    </LinearLayout>
+
+</LinearLayout>

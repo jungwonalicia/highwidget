@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical"
+    android:padding="1dp"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/ch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:format="시간 측정 : %s"
+        android:gravity="center"
+        android:textColor="#EF0B0B"
+        android:textSize="36sp"
+        android:textStyle="bold"></Chronometer>
+
+    <TimePicker
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="#FDD835"
+        android:timePickerMode="spinner"></TimePicker>
+
+    <CalendarView
+        android:id="@+id/cal"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"></CalendarView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textSize="15dp"
+            app:backgroundTint="#039BE5" />
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:text="END"
+            android:textSize="15dp"
+            app:backgroundTint="#FB8C00" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/calbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="날짜가지고 오기"
+        android:textSize="15dp"
+        app:icon="@android:drawable/ic_menu_month" />
+
+    <Button
+        android:id="@+id/timebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시간가지고 오기"
+        android:textSize="15dp"
+        app:icon="@android:drawable/ic_lock_idle_alarm" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다음 액티비티로"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:backgroundTint="#E6E613"
+        app:icon="@android:drawable/ic_menu_report_image"
+        app:iconTint="#43A047" />
+</LinearLayout>

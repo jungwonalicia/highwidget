@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--tab 액티비티 전체 설정, 배경색 등 -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6"
+    android:id="@android:id/tabhost"
+    android:orientation="horizontal"
+    android:background="#FFB300"
+    >
+    <!--activity 전체 레이아웃 설정
+    윗부분: 탭이 보임.
+    아랫부분: 탭을 누르면 화면이 보임.
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!-- 위 tab에 해당하는 설정 -->
+        <!-- android:layout_width="match_parent"는 탭의 크기를 키워줌.-->
+        <TabWidget android:id="@android:id/tabs"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            >
+        </TabWidget>
+        <!--아래 tab을 눌렀을 때 보여지는 부분 설정 -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            >
+            <include layout="@layout/sub_song"/>
+            <include layout="@layout/sub_art"/>
+            <include layout="@layout/sub_album"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
