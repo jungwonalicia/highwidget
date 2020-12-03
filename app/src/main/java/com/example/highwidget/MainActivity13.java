@@ -58,7 +58,9 @@ public class MainActivity13 extends AppCompatActivity {
             }
         });
 
-
+//여기에 다른 db처리 메서드가 추가가 되어야 함.!
+        //프로젝트의 일부분이 변경되면 commit할
+        //default changelist로 자동 체크됨
 
 
     }//onCreate()
