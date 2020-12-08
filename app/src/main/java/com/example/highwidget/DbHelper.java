@@ -11,7 +11,7 @@ public class DbHelper extends SQLiteOpenHelper {
     //private static String DB_NAME = "highdb";
 
     public DbHelper(Context context){
-        super(context, "sundaydb", null, 1);
+        super(context, "highdb2", null, 1);
     }
 
     @Override
